@@ -14,9 +14,6 @@ public class MyAnimController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		anim.SetBool("StartDancing", GlobalVariables.ArDetected);
-		if (GlobalVariables.CatWalk == true) 
-			transform.position = new Vector3 (0, 0, -9.5);
-		else
-			transform.position = new Vector3 (0, 0, 14);
+
 	}
 }
